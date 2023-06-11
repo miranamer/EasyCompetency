@@ -1,14 +1,19 @@
 # EasyCompetency
 This Chrome Extension Allows You To Easily Construct Answers To Competency Questions Based On Your Experiences
 
-![image](https://github.com/miranamer/EasyCompetency/assets/91673777/9b984f2d-c079-4053-aa79-56618107eac6)
+
+![image](https://github.com/miranamer/EasyCompetency/assets/91673777/fad0024c-ce76-4a44-8752-003b1dff8031)
 
 
 Video Demo:
 
 
 
-https://github.com/miranamer/EasyCompetency/assets/91673777/753d3ddc-7143-4fee-983b-06dbb06c4670
+
+
+https://github.com/miranamer/EasyCompetency/assets/91673777/4b2e842c-185f-4970-aaf3-22778157b358
+
+
 
 
 <h2>How It Works:</h2>
