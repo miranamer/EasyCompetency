@@ -2,7 +2,7 @@
 This Chrome Extension Allows You To Easily Construct Answers To Competency Questions Based On Your Experiences
 
 
-![image](https://github.com/miranamer/EasyCompetency/assets/91673777/fad0024c-ce76-4a44-8752-003b1dff8031)
+![image](https://github.com/miranamer/EasyCompetency/assets/91673777/1b572d41-68e5-4c36-9c39-0e8f75e04566)
 
 
 Video Demo:
