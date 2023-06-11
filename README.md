@@ -5,7 +5,7 @@ This Chrome Extension Allows You To Easily Construct Answers To Competency Quest
 ![image](https://github.com/miranamer/EasyCompetency/assets/91673777/1b572d41-68e5-4c36-9c39-0e8f75e04566)
 
 
-Video Demo:
+Video Demo: - Needs To Be Updated To Show How To Add API Key
 
 
 
