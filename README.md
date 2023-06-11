@@ -22,7 +22,7 @@ This extension takes the company and role you're applying for and answers the gi
 <h2>Future Ideas:</h2>
 <ul>
   
-  <li>Allow users to enter their own API Key so that I can publish the extension to the chrome store</li>
+  <li>[DONE!] Allow users to enter their own API Key so that I can publish the extension to the chrome store</li>
   <li>Automatically infer the role and company from the URL</li>
   <li>Automatically scrape the website, find the questions and fill the answers without the user having to do anything</li>
   <li>Fine tune the GPT model to generate answers adapted to the company and role to produce more precise and accurate responses</li>
