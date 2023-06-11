@@ -6,9 +6,7 @@ const AddExperience = ({experiences, setExperiences, setCurrentPage}) => {
 
     const handleSubmit = () => {
         setExperiences([...experiences, newExperience])
-        chrome.storage.local.set({ key: [...experiences, newExperience] }).then(() => {
-          console.log("Experiences is set" + experiences);
-        });
+        localStorage.setItem('experiences', JSON.stringify([...experiences, newExperience]));
         setCurrentPage("experiencesPage");
     }
 

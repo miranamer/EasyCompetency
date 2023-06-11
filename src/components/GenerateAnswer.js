@@ -13,9 +13,11 @@ const GenerateAnswer = ({
   role,
   question,
   experiences,
+  apiKey,
+  apiKeyAdded
 }) => {
   const configuration = new Configuration({
-    apiKey: "key",
+    apiKey: apiKey,
   });
 
   const openai = new OpenAIApi(configuration);
@@ -23,6 +25,9 @@ const GenerateAnswer = ({
   const [generatedResponse, setGeneratedResponse] = useState("");
 
   const generateResponse = async () => {
+    if(apiKeyAdded !== true){
+      return;
+    }
     setIsLoading(true);
     var promptUse = `Company I Am Applying To: ${company} | Role I Am Applying For: ${role} | List Of Experiences I Have: ${experiences} | Give me the best possible competency based answer for this question for this role at this company based on my experiences listed: ${question}`;
     const completion = await openai.createChatCompletion({
@@ -69,7 +74,8 @@ const GenerateAnswer = ({
               <div className="flex relative top-[14px]">
                 <button
                   onClick={() => generateResponse()}
-                  className="w-[100px] h-[40px] bg-blue-400 text-blue-700 text-lg font-semibold border-blue-700 border-[2px] rounded-md"
+                  data-title="Enter API Key First!"
+                  className={apiKeyAdded ? "w-[100px] h-[40px] bg-blue-400 text-blue-700 text-lg font-semibold border-blue-700 border-[2px] rounded-md" : "tooltip hover:cursor-not-allowed w-[100px] h-[40px] bg-gray-400 text-gray-700 text-lg font-semibold border-gray-700 border-[2px] rounded-md"}
                 >
                   Submit
                 </button>

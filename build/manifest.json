@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "EasyCompetency",
+  "description": "Easy Competency allows you to quickly generate competency based answers for job applications based on your previous experiences",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://*/"]
+}

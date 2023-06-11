@@ -6,6 +6,7 @@ import GenerateAnswer from './components/GenerateAnswer';
 import Experiences from './components/Experiences';
 import { useState, useEffect } from 'react';
 import AddExperience from './components/AddExperience';
+import APIPage from './components/APIPage';
 import { FiChrome } from 'react-icons/fi';
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
   const [company, setCompany] = useState();
   const [role, setRole] = useState();
   const [question, setQuestion] = useState();
+  
+  const [apiKey, setApiKey] = useState("");
+  const [apiKeyAdded, setApiKeyAdded] = useState(false);
 
   const [generatePage, setGeneratePage] = useState(true);
 
@@ -22,9 +26,16 @@ function App() {
 
   useEffect(() => {
     try {
-      chrome.storage.local.get(["key"]).then((result) => {
-        setExperiences(result.key);
-      });
+      if(localStorage.getItem("experiences") !== null){
+        setExperiences(JSON.parse(localStorage.getItem('experiences')))
+      }
+      else{
+        localStorage.setItem('experiences', JSON.stringify([]));
+      }
+      if(localStorage.getItem("apiKey") !== null){
+        setApiKey(localStorage.getItem("apiKey"));
+        setApiKeyAdded(true);
+      }
     } catch (e) {
       console.log("Error due to local state");
     }
@@ -41,11 +52,13 @@ function App() {
           {(() => {
           switch (currentPage) {
             case "generatePage":
-              return <GenerateAnswer setCompany={setCompany} setRole={setRole} setQuestion={setQuestion} InputBar={InputBar} company={company} role={role} question={question} experiences={experiences} />
+              return <GenerateAnswer setCompany={setCompany} setRole={setRole} setQuestion={setQuestion} InputBar={InputBar} company={company} role={role} question={question} experiences={experiences} apiKey={apiKey} apiKeyAdded={apiKeyAdded} />
             case "experiencesPage":
               return <Experiences experiences={experiences} setCurrentPage={setCurrentPage} setExperiences={setExperiences}/>
             case "addExperiencePage":
               return <AddExperience experiences={experiences} setExperiences={setExperiences} setCurrentPage={setCurrentPage} />
+            case "APIPage":
+              return <APIPage setApiKey={setApiKey} apiKeyAdded={apiKeyAdded} setApiKeyAdded={setApiKeyAdded}  />
             default:
               return <h1>Error!</h1>;
            }
