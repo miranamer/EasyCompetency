@@ -1,9 +1,24 @@
-# EasyCompetency
-This Chrome Extension Allows You To Easily Construct Answers To Competency Questions Based On Your Experiences
+<h1 align='center'>EasyCompetency</h1>
 
+<p align="center">
+  <img src="/android-chrome-192x192.png">
+</p>
 
-![image](https://github.com/miranamer/EasyCompetency/assets/91673777/1b572d41-68e5-4c36-9c39-0e8f75e04566)
+<p align='center'>
+  <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'>
+  <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E'>
+  <img src='https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white'>
+  <img src='https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white'>
+  <img src='https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white'>
+</p>
 
+---
+
+<h3 align='center'>This Chrome Extension Allows You To Easily Construct Answers To Competency Questions Based On Your Experiences</h3>
+
+<p align='center'>
+  <img src="https://github.com/miranamer/EasyCompetency/assets/91673777/1b572d41-68e5-4c36-9c39-0e8f75e04566">
+</p>
 
 Video Demo: - Needs To Be Updated To Show How To Add API Key
 
