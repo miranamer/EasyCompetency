@@ -44,6 +44,5 @@ This extension takes the company and role you're applying for and answers the gi
   
 </ul>
 
-
-<h2>Note:</h2>
+<h1>DISCLAIMER:</h1>
 This is NOT intended to be a perfect solution and you will most likely need to edit and alter the answers. This provides you a nice template and provides structure to the answers in order to give you an idea of what an answer could look like. Good Luck!
